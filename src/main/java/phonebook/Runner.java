@@ -9,7 +9,11 @@ public class Runner {
 		System.out.println("Введите ФИО (пример: Петров П.П.)");
 		String query = in.nextLine();
 		Phones phones = new Phones();
-		phones.run(query);		
+		ArrayList<String>  phoneList = phones.getPhoneList(query);
+		for (String phone : phoneList){
+			System.out.println(phone);
+		}
+		
 	}
 
 }
