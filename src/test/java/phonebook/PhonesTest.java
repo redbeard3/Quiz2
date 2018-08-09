@@ -7,16 +7,16 @@ import java.util.*;
 import phonebook.Phones;
 
 public class PhonesTest{
-	private static Phones phohes;
+	private static Phones phones;
 
 	@Before
 	public static void initPhones(){
-		phohes = new Phones();
+		phones = new Phones();
 	}
 
 	@After
 	public static void clearPhones(){
-		phohes = null;
+		phones = null;
 	}
 
 	@Test
@@ -25,7 +25,7 @@ public class PhonesTest{
 		list.add("+8 800 2000 500");
 		list.add("+8 800 200 600");
 		ArrayList<String> expected = list;
-		ArrayList<String> actual = phohes.getPhoneList("Иванов И.И.");
+		ArrayList<String> actual = phones.getPhoneList("Иванов И.И.");
 		assertEquals(expected, actual);
 	}
 }
