@@ -20,7 +20,7 @@ public class PhonesTest{
 	}
 
 	@Test
-	public void getPhoneList(){
+	public void getPhoneListTest(){
 		ArrayList<String> list = new ArrayList<String>();
 		list.add("+8 800 2000 500");
 		list.add("+8 800 200 600");
