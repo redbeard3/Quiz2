@@ -1,3 +1,4 @@
-Phones.class
-PhoneBook.class
-Runner.class
+phonebook/PhoneBook.class
+phonebook/Printer.class
+phonebook/Phones.class
+phonebook/Runner.class
